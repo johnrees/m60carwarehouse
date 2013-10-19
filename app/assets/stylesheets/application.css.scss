@@ -19,6 +19,18 @@ body {
   // font-size: 13px !important;
 }
 
+.top-bar {
+  margin-bottom: 0 !important;
+}
+
+#logo {
+  background: image-url("m60-logo.png") center center no-repeat;
+  width: 138px;
+  height: 100px;
+  display: block;
+  text-indent: -9999px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;

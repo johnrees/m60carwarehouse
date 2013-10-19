@@ -24,22 +24,24 @@
 %body
 
   %header
+    -# .contain-to-grid
+    .row
+      .columns.large-12
 
-    %nav.top-bar
-      %ul.title-area
-        %li.name
-          %h1= link_to "M60 Car Warehouse", root_path
-        %li.toggle-topbar.menu-icon
-          %a{href: "#"}
-            %span Menu
-      %section.top-bar-section
-        %ul.right
-          %li.divider
-          %li.active= link_to "Home", root_path
-          %li= link_to "Showroom", "showroom_path"
-          %li= link_to "Part Ex", "part_ex"
-          %li= link_to "Finance", "finance"
-          %li= link_to "Location", "location"
+        %nav.top-bar
+          %ul.title-area
+            %li.name
+              %h1= link_to "M60 Car Warehouse", root_path, id: 'logo'
+            %li.toggle-topbar.menu-icon
+              %a{href: "#"}
+                %span Menu
+          %section.top-bar-section
+            %ul.right
+              %li.active= link_to "Home", root_path
+              %li= link_to "Showroom", "showroom_path"
+              %li= link_to "Part Ex", "part_ex"
+              %li= link_to "Finance", "finance"
+              %li= link_to "Location", "location"
   = yield
   %footer
     .orange
