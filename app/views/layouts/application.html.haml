@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title M60 Car Warehouse
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %header
+      = link_to "Home", root_path
+      = link_to "Showroom", "showroom_path"
+      = link_to "Part Ex", "part_ex"
+      = link_to "Finance", "finance"
+      = link_to "Location", "location"
+    = yield
+    %footer
+      .orange
+        Call us now 0161 776 7676
+        and book in for a test drive
+      .grey M60 Car Warehouse Limited, Address Line 1, Address 2
+      .black Copyright M60 Car Warehouse - Site design & build by Seveer
