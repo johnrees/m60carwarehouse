@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'haml-rails'
 gem 'rails_12factor'
+gem 'ffaker'
+gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'

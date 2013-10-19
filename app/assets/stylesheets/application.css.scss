@@ -13,6 +13,25 @@
  */
 
 $orange: #EF923D;
+$darkgrey: #585A59;
+
+body {
+  // font-size: 13px !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.welcome {
+  padding: 0 20px;
+  background: $darkgrey;
+  color: #FFF;
+  h3 {
+    line-height: 80px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -20,12 +39,15 @@ a {
 
 header {
   background: #585A59;
+  text-transform: uppercase;
   a {
     color: #FFF;
   }
 }
 
 footer {
+  line-height: 50px;
+  font-family: 'Montserrat';
   .orange {
     background: $orange;
   }
@@ -39,4 +61,4 @@ footer {
   color: #FFF;
   text-align: center;
   text-transform: uppercase;
-}
+} //= require foundation_and_overrides
